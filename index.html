@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kobra</title>
+<style>
+  :root{color-scheme: light;}
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#0f1115;
+    padding:24px;
+  }
+  .card{
+    max-width:460px;
+    width:100%;
+    background:#1a1d24;
+    border:1px solid #2a2e38;
+    border-radius:16px;
+    padding:40px 32px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+  }
+  .icon{
+    width:64px;
+    height:64px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#3a1f1f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+  }
+  h1{
+    color:#f2f2f2;
+    font-size:20px;
+    margin:0 0 12px;
+  }
+  p{
+    color:#a8adb8;
+    font-size:14.5px;
+    line-height:1.55;
+    margin:0 0 8px;
+  }
+  .motivo{
+    margin-top:20px;
+    padding:14px 16px;
+    background:#241a1a;
+    border:1px solid #4a2a2a;
+    border-radius:10px;
+    color:#e2a3a3;
+    font-size:13.5px;
+    text-align:left;
+  }
+  .motivo b{ color:#f0b8b8; }
+  .footer{
+    margin-top:24px;
+    color:#5a6070;
+    font-size:12px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🔒</div>
+    <h1>Acceso bloqueado temporalmente</h1>
+    <p>No es posible ingresar a esta herramienta en este momento.</p>
+    <div class="motivo">
+      <b>Motivo:</b> Bloqueado por subir datos sensibles.<br>
+      Este bloqueo es momentáneo mientras se revisa el manejo de la información.
+    </div>
+    <p style="margin-top:18px;">Contacta a tu supervisor para más información.</p>
+    <div class="footer">ALSOL CONTIGO SA DE CV SOFOM ENR</div>
+  </div>
+
+<script>
+// ======================================================================
+// CONTROL DE ACCESO — edita SOLO esta línea para bloquear/desbloquear
+// true  = bloqueado (se muestra este mensaje)
+// false = acceso normal (entra a la herramienta real)
+const ACCESO_HABILITADO = false;
+// ======================================================================
+if (ACCESO_HABILITADO) {
+  window.location.replace("app.html");
+}
+</script>
+</body>
+</html>
